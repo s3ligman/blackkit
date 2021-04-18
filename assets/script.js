@@ -34,8 +34,6 @@ function activateFront() {
   back.classList.remove( "active" );
   left.classList.remove( "active" );
   right.classList.remove( "active" );
-
-
 }
 
 function activateBack() {
@@ -43,18 +41,13 @@ function activateBack() {
   front.classList.remove( "active" );
   left.classList.remove( "active" );
   right.classList.remove( "active" );
-
-
 }
 
 function activateRight() {
-
   right.classList.toggle( "active" );
   front.classList.remove( "active" );
   left.classList.remove( "active" );
   back.classList.remove( "active" );
-
-
 }
 
 function activateLeft() {
@@ -62,6 +55,12 @@ function activateLeft() {
   front.classList.remove( "active" );
   right.classList.remove( "active" );
   back.classList.remove( "active" );
+}
+
+mybutton = document.getElementById("myBtn");
 
 
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
