@@ -189,12 +189,9 @@ label { margin-right: 10px; }
     padding-left: 4vw;
     padding-right: 4vw;
 
-
   }
-    
-      .title {
-    transition: font-variation-settings 1s ease-in-out;
-    font-variation-settings: "ital" 0, "srff" 75;
+
+  .title {
     font-size: 2rem;
     line-height: 2rem;
     padding-top: 1.2rem;
