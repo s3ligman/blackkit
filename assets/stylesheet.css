@@ -40,8 +40,6 @@ h3 {
   font-variation-settings: "ital" 0, "srff" 50;
   margin: auto;
   padding-top: 3px;
-  border-radius: 5px;
-  text-shadow: 0px 0px 2px black;
 }
 
 .header {
@@ -49,9 +47,9 @@ h3 {
   width: 100vw;
   z-index: 1000;
   margin: 0 auto;
-  background-color: #6C5D34;
+  color: #6C5D34;
   text-align: center;
-  background-image: radial-gradient(#6C5D34, hsla(  0, 100%, 0%, 0.85));
+  background-color: hsla(  0, 100%, 0%, 0.85);
   box-shadow: 0px 5px 10px black;
 }
 
@@ -192,8 +190,20 @@ label { margin-right: 10px; }
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2rem;
-    padding-top: 1.2rem;
+    padding-top: 0.5rem;
+  }
+
+  .radio-group {
+    font-size: 1rem;
+    padding-bottom: 0rem;
+
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-variation-settings: "ital" 0, "srff" 50;
+    margin-top: -0.8rem;
   }
 }
