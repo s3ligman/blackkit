@@ -27,11 +27,14 @@ a {
 h1 {
   font-size: 1.8rem;
   font-variation-settings: "ital" -50, "srff" 75;
+  letter-spacing: -0.1rem;
 }
 
 h2 {
   font-size: 1.8rem;
   font-variation-settings: "ital" 0, "srff" 25;
+  line-height: 1.7rem;
+  letter-spacing: -0.1rem;
 }
 
 h3 {
@@ -40,6 +43,7 @@ h3 {
   font-variation-settings: "ital" 0, "srff" 50;
   margin: auto;
   padding-top: 3px;
+  s
 }
 
 .header {
@@ -60,6 +64,7 @@ h3 {
   font-size: 2.8rem;
   line-height: 2rem;
   padding-top: 1.2rem;
+  letter-spacing: -0.1rem;
 }
 
 .title:hover {
@@ -100,9 +105,9 @@ label:hover {
   padding-right: 2vw;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #483d8b;
+  background-color: #0f0;
   color: black;
-  box-shadow: 0px 0px 5px #483d8b;
+  box-shadow: 0px 0px 7px #0f0;
   border-radius: 10px;
 }
 
@@ -117,7 +122,7 @@ label:hover {
   height: 100vw;
   min-height:0;
   margin: auto;
-  perspective: 2500px;
+  perspective: 100vw;
   margin-bottom: 10vw;
 }
 
@@ -148,8 +153,8 @@ label:hover {
   font-size: 1rem;
   color: white;
   text-align: left;
-  padding-left: 18vw;
-  padding-right: 18vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   padding-top: 150px;
   padding-bottom: 15vw;
   margin-bottom: 10vw;
