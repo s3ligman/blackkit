@@ -17,6 +17,7 @@
 
 <body>
 
+<div class="header">
   <div class="title">
 International Performance Archive
 <br> <h3>»DIE SCHWARZE LADE | BLACK KIT«</h3>
@@ -25,31 +26,38 @@ International Performance Archive
 
   <div class="radio-group">
     <label>
-      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="front"  /> Ongoing Projects
+      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="front" checked  onclick="activateFront()" /> Projects
     </label>
     <label>
-      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="right" /> History
+      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="right" onclick="activateRight()" /> History
     </label>
     <label>
-      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="back" /> About
+      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="back" onclick="activateBack()" /> About
     </label>
     <label>
-      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="left" /> Images
+      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="left" onclick="activateLeft()" /> Contact & Imprint
     </label>
-    <label>
-      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="top" /> Contact & Imprint
-    </label>
-    <label>
-      <input class="checkbox-tools" type="radio" name="rotate-cube-side" value="bottom" checked /> Soon!
-    </label>
+
   </div>
+</div>
 
 <div class="scene">
   <div class="cube">
 
-    <div class="cube__face cube__face--front">
 
-  <p><h1>Ongoing Projects</h1></p>
+
+    <div class="cube__face cube__face--front" id="front" >
+
+      <div class="marquee">
+        <span>
+        <h2>COMING SOON: Online Project in September</h2>
+      </span>
+
+      <p>40 years ago, the one-month KONZIL convened by artists became the foundation stone of the internationally unique performance archive DIE SCHWARZE LADE | BLACK KIT. On the initiative of the artist residences in Stuttgart and Hamburg, about 70 artists from Europe and the FRG met in Stuttgart in September 1981; they lived, thought and worked together. In the anniversary year 2021, the council is to be reappraised scientifically and artistically for the first time - online, in the form of a print publication and with a performance series. </p>
+</div>
+
+
+  <p><h2>Ongoing Projects</h2></p>
 <p>BLACKKIT UNFOLDING:</p>
 
 <p>As part of the project series BLACKKIT UNFOLDING a new archival box of international performance art will be opened every month with BORIS NIESLONY. Box by box the performance archive will be unfolded and provide insight into the versatile depths of the archive.
@@ -87,13 +95,33 @@ A print publication, supplemented by archive material, interviews and texts by r
 
 </div>
 
-    <div id="square" class="cube__face cube__face--back">
+    <div  class="cube__face cube__face--back" id="back" >
       <p><h1>About</h1></p>
       <p>The International Performance Art Archive THE BLACKKIT contains more than 3500 boxes, portfolios, folders and holders with documents and performance art relics. The archive stock is stored on 73 shelves with over 300 metres total length as well as in 28 large crates filled with relics. The visual documentation department consists of slides, negatives, vintages and hundreds of hours on film, some of which are of considerable historical value. The archive’s contents are currently being indexed and catalogued to create a digital data base in order to also ensure external research and work with the archive materials
       </p>
+
+      <img class="mySlides" src="images/konzil_material_1.jpeg">
+      <img class="mySlides" src="images/konzil_material_2.jpeg">
+      <img class="mySlides" src="images/konzil_material_3.jpeg">
+      <img class="mySlides" src="images/konzil_material_4.jpeg">
+      <img class="mySlides" src="images/konzil_material_5.jpeg">
+      <img class="mySlides" src="images/konzil_material_6.jpeg">
+      <img class="mySlides" src="images/konzil_material_7.jpeg">
+      <img class="mySlides" src="images/konzil_material_8.jpeg">
+      <img class="mySlides" src="images/konzil_material_9.jpeg">
+      <img class="mySlides" src="images/konzil_material_10.jpeg">
+      <img class="mySlides" src="images/konzil_material_11.jpeg">
+      <img class="mySlides" src="images/konzil_material_12.jpeg">
+      <img class="mySlides" src="images/konzil_material_13.jpeg">
+      <img class="mySlides" src="images/konzil_material_14.jpeg">
+      <img class="mySlides" src="images/konzil_material_15.jpeg">
+      <img class="mySlides" src="images/konzil_material_16.jpeg">
+      <img class="mySlides" src="images/konzil_material_17.jpeg">
+      <img class="mySlides" src="images/konzil_material_18.jpeg">
+
   </div>
 
-    <div id="square" class="cube__face cube__face--right">
+    <div  class="cube__face cube__face--right" id="right" >
       <p><h1>History</h1></p>
       <p>The name BLACKKIT for the Performance Art Archive goes back to the project DAS KONZIL. In 1981, about 70 artists from Germany and other European countries met at the invitation of the artist’s houses in Stuttgart and Hamburg with the aim of closely living and working together. <br> <br>
 During the KONZIL, the artists met every evening at a central table to reflect on what they had experienced and to ask fundamental questions about art and discussing fundamental positions of developments in the fields of interaction, intervention, communication and intermedial arts. There was voting, arguing, and discussion; the meetings were carefully documented. <br> <br>
@@ -102,42 +130,20 @@ Rather, it is a sculpture of a process of collecting that has been going on for 
 The Archive underwent many transformations. The first one was a question of material: the heavy wooden wardrobe was replaced by light metal cabinets according to the collection’s constant growth. The next transformation became necessary around 1993, because the material was not just compiled from various meetings but also raised questions surpassing mere documentation. It evolved into archive structures, which require a different approach on structure and processing.<br> <br>
 The name DIE SCHWARZEN LADE finally became BLACKKIT ('black kit/drawer'; lit. trans.: ='black load/charge'), The BLACKKIT was born.
 </p>
-    </div>
 
-    <div id="slider">
-<figure>
-
-
-</div>
-
-    <div class="cube__face cube__face--left">
-
-      <div class="gallery">
-<img class="mySlides" src="images/konzil_material_1.jpeg">
-<img class="mySlides" src="images/konzil_material_2.jpeg">
-<img class="mySlides" src="images/konzil_material_3.jpeg">
-<img class="mySlides" src="images/konzil_material_4.jpeg">
-<img class="mySlides" src="images/konzil_material_5.jpeg">
-<img class="mySlides" src="images/konzil_material_6.jpeg">
-<img class="mySlides" src="images/konzil_material_7.jpeg">
-<img class="mySlides" src="images/konzil_material_8.jpeg">
-<img class="mySlides" src="images/konzil_material_9.jpeg">
-<img class="mySlides" src="images/konzil_material_10.jpeg">
-<img class="mySlides" src="images/konzil_material_11.jpeg">
-<img class="mySlides" src="images/konzil_material_12.jpeg">
-<img class="mySlides" src="images/konzil_material_13.jpeg">
-<img class="mySlides" src="images/konzil_material_14.jpeg">
-<img class="mySlides" src="images/konzil_material_15.jpeg">
-<img class="mySlides" src="images/konzil_material_16.jpeg">
-<img class="mySlides" src="images/konzil_material_17.jpeg">
-<img class="mySlides" src="images/konzil_material_18.jpeg">
-</div>
-
+<img class="mySlides" src="images/History_Archive/history_archive_1.jpg">
+<img class="mySlides" src="images/History_Archive/history_archive_2.jpg">
+<img class="mySlides" src="images/History_Archive/history_archive_3.jpg">
+<img class="mySlides" src="images/History_Archive/history_archive_4.png">
+<img class="mySlides" src="images/History_Archive/history_archive_5.jpg">
 
 
     </div>
 
-    <div id="square" class="cube__face cube__face--top"><p><h1>Contact</h1></p>
+
+    <div class="cube__face cube__face--left" id="left">
+
+      <p><h1>Contact</h1></p>
 
     <p>  Archiv-Team, Atelierhaus Quartier am Hafen, Poller Kirchweg 78-90, 51105 Köln <br>
       Boris Nieslony, Asa European, Boltensternstr. 16 V6, 50735 Köln, <br>Telefon: +49 (0) 221 763428, E-Mail: info@blackkit.org
@@ -151,16 +157,8 @@ The name DIE SCHWARZEN LADE finally became BLACKKIT ('black kit/drawer'; lit. tr
 <br><br> Website: Louis Hay
      </p>
 
+  </div>
 
-
-    </div>
-
-    <div id="square" class="cube__face cube__face--bottom">
-
-      <p><h1>SOON: Online Project in September:</h1></p>
-      <p>40 years ago, the one-month KONZIL convened by artists became the foundation stone of the internationally unique performance archive DIE SCHWARZE LADE | BLACK KIT. On the initiative of the artist residences in Stuttgart and Hamburg, about 70 artists from Europe and the FRG met in Stuttgart in September 1981; they lived, thought and worked together. In the anniversary year 2021, the council is to be reappraised scientifically and artistically for the first time - online, in the form of a print publication and with a performance series. </p>
-
-    </div>
 
   </div>
 </div>
